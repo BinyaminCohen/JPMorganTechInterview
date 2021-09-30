@@ -1,5 +1,5 @@
 # Find a prime number by his index at the list
-import math
+from math import sqrt
 
 
 def index(n):
@@ -18,7 +18,7 @@ def gen_prime_num():
     count = 2
     while True:
         isprime = True
-        for x in range(2, int(math.sqrt(count) + 1)):
+        for x in range(2, int(sqrt(count) + 1)):
             if count % x == 0:
                 isprime = False
                 break
